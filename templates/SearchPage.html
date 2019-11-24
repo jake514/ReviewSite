@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Review Page</title>
+    <link rel="stylesheet" href="SearchBar.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div style="padding-left:16px">
+  <h2>Reviews</h2>
+  <p>Search for restuarant reviews in your area, please enter your zipcode:</p>
+  <form action="{{ url_for('results') }}" method="POST">
+      <input type="text" name = "searchKey" placeholder="Search..">
+      <button type = "submit">Search</button>
+  </form>
+</div>
+
+<div class="topnav">
+    <a href="">Home</a>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
